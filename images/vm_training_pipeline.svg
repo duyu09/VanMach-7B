@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 355" role="img" aria-label="VanMach-7B training timeline">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10151E"/><stop offset="1" stop-color="#141C29"/></linearGradient>
+  <linearGradient id="track" x1="0" x2="1"><stop stop-color="#76A9D1"/><stop offset=".48" stop-color="#9876C5"/><stop offset="1" stop-color="#AF83CF"/></linearGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity=".38"/></filter>
+</defs>
+<rect width="1200" height="355" rx="22" fill="url(#bg)"/>
+<path d="M54 46 H1146" stroke="#313B4C" stroke-width="1"/>
+<text x="55" y="35" font-family="Arial,Helvetica,sans-serif" font-size="12" letter-spacing="2.5" font-weight="700" fill="#9CAFC8">VANMACH / MODEL DEVELOPMENT</text>
+<text x="55" y="93" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#F3F5FA">From foundation model to domain-specific language model</text>
+<text x="1146" y="93" font-family="Arial,Helvetica,sans-serif" font-size="12" text-anchor="end" fill="#AAB7C7">7.71B parameters</text>
+<path d="M125 191 H1048" fill="none" stroke="#344357" stroke-width="10" stroke-linecap="round"/>
+<path d="M125 191 H1048" fill="none" stroke="url(#track)" stroke-width="3.5" stroke-linecap="round"/>
+<g font-family="Arial,Helvetica,sans-serif">
+ <g text-anchor="middle"><text x="123" y="143" font-size="17" fill="#E3EBF5" font-weight="700">SeaLLMs-v3-7B-Chat</text><text x="123" y="163" font-size="12.5" fill="#A1B4CA">Qwen2 foundation</text></g>
+ <g text-anchor="middle"><text x="356" y="130" font-size="17" fill="#DFCAEF" font-weight="700">Vocabulary expansion</text><text x="356" y="150" font-size="15" fill="#DFCAEF" font-weight="600">+ Mathematical initialization</text></g>
+ <g text-anchor="middle"><text x="585" y="143" font-size="20" fill="#8ED9EA" font-weight="700">CPT</text><text x="585" y="163" font-size="13" fill="#A9CDD9">Continued pre-training</text></g>
+ <g text-anchor="middle"><text x="817" y="143" font-size="20" fill="#DBBAEF" font-weight="700">SFT</text><text x="817" y="163" font-size="13" fill="#BBA7D3">Supervised fine-tuning</text></g>
+ <g text-anchor="middle"><text x="1046" y="143" font-size="20" fill="#DFCAEF" font-weight="700">VanMach-7B</text><text x="1046" y="163" font-size="13" fill="#BBA7D3">Domain-specialized model</text></g>
+</g>
+<g filter="url(#shadow)">
+ <circle cx="123" cy="191" r="21" fill="#172637" stroke="#76A9D1" stroke-width="3"/><circle cx="356" cy="191" r="25" fill="#745084"/><circle cx="585" cy="191" r="21" fill="#2A9FB3"/><circle cx="817" cy="191" r="21" fill="#9561AC"/><circle cx="1046" cy="191" r="24" fill="#745084"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" text-anchor="middle"><text x="123" y="196" fill="#B8DBF4">00</text><text x="356" y="196" fill="#FFFFFF">01</text><text x="585" y="196" fill="#FFFFFF">02</text><text x="817" y="196" fill="#FFFFFF">03</text><text x="1046" y="196" fill="#FFFFFF">04</text></g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="12.5" fill="#BDCBDB" text-anchor="middle">
+ <text x="123" y="252">Pretrained weights</text><text x="123" y="271">&amp; tokenizer</text>
+ <text x="356" y="252">Dictionary + convex geometry</text><text x="356" y="271">13,612 tokens · no gradients</text>
+ <text x="585" y="252">QLoRA / NF4 / r = 64</text><text x="585" y="271">Embedding + LM Head updates</text>
+ <text x="817" y="252">LoRA / FP8 / r = 32</text><text x="817" y="271">Adapter-only updates</text>
+ <text x="1046" y="252">Chữ Nôm / Hán-Nôm</text><text x="1046" y="271">Vietnamese culture</text>
+</g>
+<path d="M55 305 H1145" stroke="#313B4C"/>
+<text x="55" y="327" font-family="Arial,Helvetica,sans-serif" font-size="11" fill="#99A9BA">The initialization stage constructs input embeddings and untied LM Head vectors before gradient-based training.</text>
+</svg>
