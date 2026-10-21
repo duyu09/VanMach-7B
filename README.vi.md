@@ -9,6 +9,10 @@
 
 [**Tiếng Anh**](./README.md) | [**Tiếng Trung giản thể**](./README.zh-CN.md) | [**Tiếng Trung phồn thể**](./README.zh-TW.md) | [**Tiếng Việt**](./README.vi.md)
 
+### Kho mã nguồn mở
+
+[**https://huggingface.co/Duyu/VanMach-7B**](https://huggingface.co/Duyu/VanMach-7B)
+
 ## 1. Giới thiệu mô hình
 
 **Mô hình ngôn ngữ lớn Văn Mạch (tiếng Trung: 文脉大模型; tiếng Anh: Van Mach LLM, mã mô hình: VanMach-7B)** là một mô hình ngôn ngữ lớn đa ngôn ngữ quy mô 7B, được phát triển hướng đến chữ viết truyền thống Việt Nam (Chữ Nôm), tư liệu lịch sử và các lĩnh vực ngôn ngữ, văn hóa. Mô hình được xây dựng trên nền tảng [SeaLLMs-v3-7B-Chat](https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat), thông qua các bước mở rộng bộ từ vựng Chữ Nôm được thiết kế chuyên biệt, khởi tạo embedding từ bằng phương pháp tính toán toán học thuần túy, tiếp tục tiền huấn luyện (CPT) và tinh chỉnh có giám sát theo chỉ dẫn (SFT), nhằm tăng cường khả năng xử lý Chữ Nôm Việt Nam, tiếng Việt hiện đại, tư liệu lịch sử Hán Nôm và tri thức văn hóa truyền thống Việt Nam. Khác với các mô hình đa dụng chủ yếu hướng đến những tác vụ xử lý ngôn ngữ tự nhiên tiếng Việt hiện đại, VanMach-7B của chúng tôi lấy **biểu diễn tính toán ngôn ngữ học của Chữ Nôm, tri thức ngôn ngữ lịch sử và mối liên hệ giữa chúng với tiếng Việt hiện đại** làm định hướng cốt lõi trong quá trình phát triển mô hình. Mô hình hỗ trợ ba ngôn ngữ cùng các hình thức chữ viết tương ứng: **tiếng Việt** 【Chữ Quốc ngữ và Chữ Nôm được sử dụng trong lịch sử】, **tiếng Trung** 【chữ Hán giản thể và chữ Hán phồn thể】, **tiếng Anh**.

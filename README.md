@@ -9,6 +9,10 @@
 
 [**English**](./README.md) | [**Chinese Simplified**](./README.zh-CN.md) | [**Chinese Traditional**](./README.zh-TW.md) | [**Vietnamese**](./README.vi.md)
 
+### Open-source Repository
+
+[**https://huggingface.co/Duyu/VanMach-7B**](https://huggingface.co/Duyu/VanMach-7B)
+
 ## 1. Model Overview
 
 **Van Mach (Vietnamese: Văn Mạch; Chinese: 文脉大模型; Model ID: VanMach-7B)** is a 7B-scale multilingual large language model designed for Vietnamese traditional writing (Chữ Nôm), historical documents, and linguistic and cultural studies. Built upon [SeaLLMs-v3-7B-Chat](https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat), the model enhances its capabilities in processing Vietnamese Chữ Nôm, modern Vietnamese, historical Hán-Nôm documents, and traditional Vietnamese cultural knowledge through a specially designed Chữ Nôm vocabulary expansion, purely mathematical embedding initialization, continued pre-training (CPT), and supervised fine-tuning (SFT). Unlike general-purpose models primarily developed for modern Vietnamese natural language processing tasks, our VanMach-7B places **the computational linguistic representation of Chữ Nôm, historical linguistic knowledge, and their connections to modern Vietnamese** at the center of its development. The model supports three languages and their corresponding writing systems: **Vietnamese** 【Chữ Quốc ngữ and the historically used Chữ Nôm】, **Chinese** 【Simplified Chinese and Traditional Chinese】, and **English**.

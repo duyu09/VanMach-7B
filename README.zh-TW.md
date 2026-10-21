@@ -9,6 +9,10 @@
 
 [**英語**](./README.md) | [**簡體中文**](./README.zh-CN.md) | [**繁體中文**](./README.zh-TW.md) | [**越南語**](./README.vi.md)
 
+### 開源鏈接
+
+[**https://huggingface.co/Duyu/VanMach-7B**](https://huggingface.co/Duyu/VanMach-7B)
+
 ## 1. 模型簡介
 
 **文脈大模型（越南語：Văn Mạch；英語：Van Mach，模型編號：VanMach-7B）** 是一款面向越南傳統文字（喃字）、歷史文獻與語言文化領域的 7B 規模多語言大型語言模型。模型以 [SeaLLMs-v3-7B-Chat](https://huggingface.co/SeaLLMs/SeaLLMs-v3-7B-Chat) 為基礎模型，透過專門設計的喃字詞彙表擴充、純數學計算的詞嵌入初始化、增量預訓練（CPT）以及指令監督微調（SFT）等步驟，增強模型對越南喃字（Chữ Nôm）、現代越南語、漢喃歷史文獻及越南傳統文化知識的處理能力。不同於主要針對現代越南語自然語言處理任務的通用模型，我們的 VanMach-7B 將 **喃字的語言學計算表示、歷史語言知識與現代越南語之間的關聯** 作為模型開發的核心方向。模型支援以下三種語言及其相應書寫形式： **越南語** 【國語字（Chữ Quốc ngữ）以及歷史上使用的喃字（Chữ Nôm）】、**中文** 【簡體中文與繁體中文】、**英語**。
